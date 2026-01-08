@@ -45,3 +45,20 @@ foreach (var c in candidates)
         // further analysis (e.g., feature extraction, visualization, export)
     }
 }
+
+
+## Input / output
+
+- **Input:** `Mat rgbaMat` (RGBA image matrix)
+- **Output:** `List<Candidate>` where each `Candidate` contains:
+  - `x, y`: centroid coordinates [pixels]
+  - `area`: contour area [pixel^2]
+
+## Sample data and reproducibility
+
+`sample_data/` (to be added) contains a small set of light-shielded sample frames (PNG) for testing.
+These files are intended for verifying candidate extraction behavior and output format.
+
+## License
+
+MIT License (see `LICENSE`).
